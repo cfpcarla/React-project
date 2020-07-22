@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
-// import "./Login.css";
+import { Button, FormGroup, FormControl } from "react-bootstrap";
+import "./App.css";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -14,44 +14,30 @@ export default function Login() {
     event.preventDefault();
   }
 
-  function App() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          return (
-          <div className="Login">
-            <form onSubmit={handleSubmit}>
-              <FormGroup controlId="email" bsSize="large">
-                <ControlLabel>Email</ControlLabel>
-                <FormControl
-                  autoFocus
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </FormGroup>
-              <FormGroup controlId="password" bsSize="large">
-                <ControlLabel>Password</ControlLabel>
-                <FormControl
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  type="password"
-                />
-              </FormGroup>
-              <Button
-                block
-                bsSize="large"
-                disabled={!validateForm()}
-                type="submit"
-              >
-                Login
-              </Button>
-            </form>
-          </div>
-          );
-        </header>
-      </div>
-    );
-  }
+  return (
+    <div className="Login">
+      <form onSubmit={handleSubmit}>
+        <FormGroup controlId="email" bsSize="large">
+          {/* <ControlLabel>Email</ControlLabel> */}
+          <FormControl
+            autoFocus
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </FormGroup>
+        <FormGroup controlId="password" bsSize="large">
+          {/* <ControlLabel>Password</ControlLabel> */}
+          <FormControl
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            type="password"
+          />
+        </FormGroup>
+        <Button block bsSize="large" disabled={!validateForm()} type="submit">
+          Login
+        </Button>
+      </form>
+    </div>
+  );
 }
-// export default App;
