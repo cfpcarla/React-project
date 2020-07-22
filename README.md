@@ -1,6 +1,6 @@
 # React-project
 
-- The page is responsive React application with Material Ui. I Also implemented validations for email from here: #https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
+- The page is responsive React application with Material Ui. I Also implemented validations for email from here: https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
 
 ![login_page](https://github.com/cfpcarla/React-project/blob/master/my-app/src/photos/login.png)
 
