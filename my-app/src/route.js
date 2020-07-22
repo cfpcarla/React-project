@@ -1,5 +1,5 @@
-import Login from "./containers/Login";
+import App from "./App";
 
-<Route exact path="/login">
-  <Login />
+<Route exact path="/App">
+  <App />
 </Route>;
